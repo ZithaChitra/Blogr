@@ -1,19 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import styles from '../styles/Components/Header.module.css'
 
 import logo from '../public/images/logo.svg';
 
 const Header: React.FC = () => {
     return (
-        <div className='Header'>
-            <header>
-                <nav className='header__nav'>
-                    <Link href='/#' passHref>
-                        <Image src={logo} alt='logo' />
-                    </Link>
-
+        <div>
+            <header className={styles.header}>
+                <nav className='header__nav flex flex-jc-sb'>
+                    
+                    <Image src={logo} alt='logo' />
 
                     <ul className='header__links hide-for-mobile'>
                         <Link href='/'>
@@ -35,7 +33,7 @@ const Header: React.FC = () => {
                         <span></span>
                     </div>
                 </nav>
-                <ul className='header__menu'>
+                <ul className='header__menu hide-for-desktop'>
                     <Link href='/'>
                         <a>Product</a>
                     </Link>

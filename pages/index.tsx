@@ -1,13 +1,15 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Header from '../components/Header'
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
     <div>
-      <body>
-        Product
+      <Header />
+
+        {/* Product
         
         Overview
         Pricing
@@ -84,10 +86,15 @@ const Home: NextPage = () => {
         LinkedIn
 
         <div className="attribution">
-          {/* Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. */}
-          Coded by <a href="#">Zitha Chitra</a>.
-        </div>
-      </body>
+          Challenge by
+          <Link href="https://www.frontendmentor.io?ref=challenge">
+            <a>Frontend Mentor</a>
+          </Link>
+          Coded by
+          <Link href='/#'>
+            <a>Zitha Chitra</a>.
+          </Link>
+        </div> */}
     </div>
   )
 }
