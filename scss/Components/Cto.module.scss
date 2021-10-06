@@ -1,0 +1,22 @@
+@use "sass:math";
+@import "../utils";
+
+.cto {
+  width: toRem(138);
+  height: toRem(48);
+  text-align: center;
+  border-radius: toRem(math.div(48, 2));
+  background: white;
+
+  &__a {
+    text-align: center;
+    color: hsl(356, 100%, 66%);
+    font-size: toRem(15);
+    font-weight: 300;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+  }
+}

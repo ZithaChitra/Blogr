@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Overlay = () => {
+function NavDrawer() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Overlay = () => {
     )
 }
 
-export default Overlay
+export default NavDrawer

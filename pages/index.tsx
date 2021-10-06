@@ -1,13 +1,37 @@
 import type { NextPage } from 'next'
-import Header from '../components/Header'
+import Header from '../components/NavBar'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import React, { Component } from 'react'
 
-const Home: NextPage = () => {
-  return (
-    <div>
-      <Header />
+interface cState{
+  isToggleOn: boolean
+} 
+
+export class Home extends Component {
+
+  state: cState = {
+    isToggleOn: false
+  };
+
+  handleToggleClick = () => {
+    this.setState((prevState: cState) => {
+      return {isToggleOn: !prevState};
+    });
+  }
+
+  handleBackdropClick = () => {
+    this.setState({isToggleOn: false});
+  }
+  
+  render() {
+
+    
+
+    return (
+      <div>
+        <Header />
 
         {/* Product
         
@@ -95,8 +119,9 @@ const Home: NextPage = () => {
             <a>Zitha Chitra</a>.
           </Link>
         </div> */}
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 export default Home
