@@ -19,24 +19,28 @@ body {
   box-sizing: inherit;
 }
 
-// global padding
-.gb-padding{
-  padding: 0 toRem(167);
-}
 
 // Flexbox
 .flex{
   display: flex;
 
+  &-c{
+    flex-direction: column;
+  }
+  
   &-jc-sb{
     justify-content: space-between;
   }
 
-
+  
   &-jc-c{
     justify-content: center;
   }
 
+  &-jc-s{
+    justify-content: start;
+  }
+  
   &-ai-c{
     align-items: center;
   }
@@ -57,4 +61,11 @@ body {
   }
 }
 
+// global padding
+.gb-padding{
+  padding: 0 toRem(167);
+  @include breakpoints-down(medium){
+    padding: 0 toRem(21);
+  }
+}
 

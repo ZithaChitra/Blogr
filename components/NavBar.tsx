@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
 
                     <div className={`${styles.navbar__cto} flex flex-ai-c hide-for-mobile`}>
                         <Link href='/'><a className={`${styles.navbar__a}`}>Login</a></Link>
-                        <Cto name='Sign Up' href='/'/>
+                        <Cto name='Sign Up' href='/' />
                     </div>
 
                     <div id='btnHamburger' className={`${styles.navbar__toggle} hide-for-desktop`}>
@@ -42,6 +42,17 @@ const Navbar: React.FC = () => {
                         <span className={`${styles.span}`}></span>
                     </div>
                 </nav>
+
+                <div className={`${styles.navbar__heroe} flex flex-c flex-ai-c flex-jc-s`}>
+                    <div className={`${styles.txt}`}>
+                        <h2>A modern publishing platform</h2>
+                        <p>Grow your audience and build your online brand</p>
+                    </div>
+                    <div className={`{btns} flex`}>
+                        <Cto name='Start for free' href='/' />
+                        <Cto name='Learn more' href='/' transparent={true} />
+                    </div>
+                </div>
             </header>
         </div>
     )

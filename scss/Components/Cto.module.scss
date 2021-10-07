@@ -8,6 +8,11 @@
   border-radius: toRem(math.div(48, 2));
   background: white;
 
+  .t{
+    background: transparent;
+    border: 1px solid white;
+  }
+
   &__a {
     text-align: center;
     color: hsl(356, 100%, 66%);
@@ -18,5 +23,13 @@
     &:hover{
         text-decoration: underline;
     }
+
+    .at{
+      color: white;
+    }
   }
+
+  
 }
+
+
